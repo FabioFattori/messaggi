@@ -1,0 +1,26 @@
+.HeaderChat{
+    background-color: rgb(85, 85, 85);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.NomeContatto{
+    padding-left: 10px;
+}
+
+.chatContent{
+    margin-left:5px;
+    width: 90%;
+    border-left: 1px solid rgb(148, 148, 148);
+    margin-right: 15px;
+}
+
+
+.NoContactSelected{
+    background-color: rgb(85, 85, 85);
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

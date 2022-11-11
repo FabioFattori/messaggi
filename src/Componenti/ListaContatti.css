@@ -1,9 +1,21 @@
 .ListaContatti {
-  margin-right: 10px;
+  margin-right: 15px;
   margin-left: 15px;
-  width: 35%;
+  width: 90%;
+  min-width: 140px!important;
 }
 
+.HeaderContatti{
+  
+  background-color: rgb(85, 85, 85);
+  margin-left:15px;
+  margin-bottom: 7px;
+  margin-right: -15px;
+}
+
+.divider{
+  margin-top: 10px;
+}
  
 
 .Contatto {

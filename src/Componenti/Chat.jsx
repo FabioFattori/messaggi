@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Avatar } from "@chakra-ui/react";
 import { Input } from '@chakra-ui/react'
+import "./Chat.css"
 
 function Chat({ UserName }) {
   const [content, setContent] = useState();
@@ -12,8 +13,8 @@ function Chat({ UserName }) {
       setContent(
         <div>
           <div className="HeaderChat">
-            <Avatar size="sm" bg="teal.500" />
-            <h1>{UserName}</h1>
+            <Avatar size="2xs" bg="teal.500" />
+            <h1 className="NomeContatto">{UserName}</h1>
           </div>
           <div className="Messaggi"></div>
           <Input variant='unstyled' placeholder='Scrivi Un Messaggio' />
@@ -21,8 +22,8 @@ function Chat({ UserName }) {
       );
     } else {
       setContent(
-        <div>
-          <p>POrco</p>
+        <div className="NoContactSelected">
+          <p>Scegli un Contatto ed inizia a Cattare!</p>
         </div>
       );
     }

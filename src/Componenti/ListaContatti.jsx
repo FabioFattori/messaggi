@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import "./ListaContatti.css";
 import SearchBar from "./SearchBar";
+import { Divider } from "@chakra-ui/react";
 
 function ListaContatti({ SetSelection, listaContatti, setContact }) {
   const [show, setShow] = useState();
@@ -30,9 +31,15 @@ function ListaContatti({ SetSelection, listaContatti, setContact }) {
   }
 
   return (
-    <div className="ListaContatti">
-      <SearchBar setContatti={setContact} />
-      <div>{show}</div>
+    <div>
+      <div className="HeaderContatti">
+        Le Mie Chat:
+      </div>
+      <div className="ListaContatti">
+        <SearchBar setContatti={setContact} />
+        <Divider className="divider" />
+        <div>{show}</div>
+      </div>
     </div>
   );
 }
