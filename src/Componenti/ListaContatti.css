@@ -1,0 +1,43 @@
+.ListaContatti {
+  width: 50%;
+}
+
+ 
+
+.Contatto {
+  color: rgb(148, 148, 148);
+  display: flex;
+  background-color: rgb(32, 32, 32);
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: solid 1px;
+  border-color: rgb(148, 148, 148);
+  padding-left: 2px;
+  padding: 7px 0px 12px 5px;
+
+  transition: ease 0.5s;
+    
+}
+
+.Contatto:hover {
+  cursor: pointer;
+  background-color: rgb(65, 65, 65);
+}
+
+.TitoloContatto {
+  pointer-events: none;
+
+  padding-left: 10px;
+  font-weight: 100;
+  margin-bottom: 1px;
+}
+
+.SubtitlesContatto {
+  padding-left: 20px;
+
+  margin-top: 0;
+
+  font-size: smaller;
+  pointer-events: none;
+
+}
