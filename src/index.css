@@ -1,6 +1,5 @@
 :root {
-  --maxWidth: 700px;
-  --LeftPadding: 60px;
+  --bgChiaro:rgb(85, 85, 85)
 }
 
 body {

@@ -1,0 +1,31 @@
+.MexContainer {
+    padding-top:10px;
+  background-image: url("https://camo.githubusercontent.com/854a93c27d64274c4f8f5a0b6ec36ee1d053cfcd934eac6c63bed9eaef9764bd/68747470733a2f2f7765622e77686174736170702e636f6d2f696d672f62672d636861742d74696c652d6461726b5f61346265353132653731393562366237333364393131306234303866303735642e706e67");
+  background-size: contain;
+  height: 94.5%;
+}
+
+.Value > span {
+  background-color: rgb(122, 185, 28);
+  padding: 2px 10px 7px 10px;
+  border: 0px solid;
+  border-radius: 36px;
+}
+
+.Value{
+    
+  margin-bottom: 15px;
+}
+
+.MexRicevuto {
+  text-align: start;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.MexInviato {
+  width: 100%;
+  text-align: end;
+
+  padding-right: 10px;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Input } from "@chakra-ui/react";
 import "../Componenti/SearchBar.css";
-import getContatti from "../Functions/Store"
+import {getContatti} from "../Functions/Store"
 import { CloseButton } from '@chakra-ui/react'
 
 function SearchBar({setContatti}) {
