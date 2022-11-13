@@ -25,6 +25,10 @@
   align-items: center;
 }
 
+.cHat{
+  height: 100%;
+}
+
 .ScriviMex {
   padding-top: 10px;
   background-color: rgb(56, 56, 56);

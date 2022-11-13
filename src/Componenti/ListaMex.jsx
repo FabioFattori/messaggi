@@ -14,13 +14,13 @@ function ListaMex({UserName}) {
         Inviati[index].To === localStorage.getItem("Select")
       ) {
         m[index] = (
-          <div className="MexRicevuto">
+          <div key={index} className="MexRicevuto">
             <p className="Value"><span>{Inviati[index].value}</span></p>
           </div>
         );
       } else if (Inviati[index].Sender === localStorage.getItem("Select")) {
         m[index] = (
-          <div className="MexInviato">
+          <div key={index} className="MexInviato">
             <p className="Value"><span>{Inviati[index].value}</span></p>
           </div>
         );

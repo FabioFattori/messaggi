@@ -18,23 +18,26 @@ function getContatti() {
   return lista;
 }
 
+var mexs = [
+  {
+    value: "prova",
+    Sender: "Il bro",
+    To: "me",
+  },
+  {
+    value: "prova1",
+    Sender: "me",
+    To: "Il bro",
+  },
+];
+
 function getMex() {
-  var mexs = [
-    {
-      value: "prova",
-      Sender: "Il bro",
-      To:"me",
-    },
-    {
-      value: "prova1",
-      Sender: "me",
-      To:"Il bro",
-    }
-  ];
-
-  
-
   return mexs;
 }
 
-export { getContatti, getMex };
+function AddMex(Messaggio, sender, to) {
+  var newMex = { value: Messaggio, Sender: to, To: sender };
+  mexs[mexs.length] = newMex;
+}
+
+export { getContatti, getMex,AddMex };

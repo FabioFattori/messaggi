@@ -8,10 +8,11 @@ import {getContatti} from "../Functions/Store"
 function Home() {
   const [select, setSelect] = useState();
   const [ListaContatti, setContatti] = useState(getContatti());
-
+ const [isSelected,setSelected]=useState(false)
 
   var setSel = (e) => {
     setSelect(e.target.innerText.split("\n")[0]);
+    setSelected(true)
     localStorage.setItem("Select",e.target.innerText.split("\n")[0])
   };
 
@@ -22,7 +23,7 @@ function Home() {
   return (
     <div className="HomeContent">
       <Contatti SetSelection={setSel} listaContatti={ListaContatti} setContact={setLista} />
-      <Chat UserName={select} />
+      <Chat UserName={select} isSelectedContact={isSelected} />
     </div>
   );
 }
